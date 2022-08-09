@@ -1,0 +1,48 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "http://192.168.20.47:8081/repository/leke-snapshots/" }.setAllowInsecureProtocol(true)
+        maven { url "http://192.168.20.47:8081/repository/letalk-snapshots/" }.setAllowInsecureProtocol(true)
+        maven { url "http://192.168.20.47:8081/repository/letalk-release/" }.setAllowInsecureProtocol(true)
+        maven { url "http://192.168.20.47:8081/repository/leke-releases/" }.setAllowInsecureProtocol(true)
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }.setAllowInsecureProtocol(true)
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }.setAllowInsecureProtocol(true)
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenCentral()
+        maven { url "http://192.168.20.47:8081/repository/leke-snapshots/" }.setAllowInsecureProtocol(true)
+        maven { url "http://192.168.20.47:8081/repository/letalk-snapshots/" }.setAllowInsecureProtocol(true)
+        maven { url "http://192.168.20.47:8081/repository/letalk-release/" }.setAllowInsecureProtocol(true)
+        maven { url "http://192.168.20.47:8081/repository/leke-releases/" }.setAllowInsecureProtocol(true)
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }.setAllowInsecureProtocol(true)
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }.setAllowInsecureProtocol(true)
+        maven {
+            url 'https://repo.huaweicloud.com/repository/maven/'
+        }
+        maven { url 'https://maven.google.com' }
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "NetworkAPT"
+include ':app'
+include ':apt_annotations'
+include ':apt_processor'
+include ':http_network'

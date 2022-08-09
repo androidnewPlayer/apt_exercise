@@ -1,2 +1,2 @@
 # apt_exercise
-apt 失效repository仓库
+apt 实现repository仓库
